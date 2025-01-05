@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Document</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <main>
+    <nav class=" flex items-center justify-between px-8 py-4  text-orange-600 ">
+      <div class="n-left flex items-center justify-center gap-20">
+        <div class="logo text-2xl font-semibold">logo</div>
+        <div class="links flex gap-8 text-xl  items-center">
+          <a href="#"> Home
+            <i class="ri-home-4-line"></i></a>
+          <a href="#"> Resturdent
+            <i class="ri-restaurant-line"></i> </a>
+          <a href="#"> Food
+            <i class="ri-restaurant-2-line"></i></a>
+        </div>
+      </div>
+      <div class="n-right flex items-center gap-10">
+    
+        <select class="border border-orange-600 rounded-lg px-6 py-2 text-lg font-medium">
+          <option disabled selected >Find your city</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Pune">Pune</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Bhopal">Bhopal</option>
+          <option value="Indore">Indore</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Gurgaon">Gurgaon</option>
+          <option value="Noida">Noida</option>
+        </select>
+        
+
+        <i class="ri-shopping-cart-2-line text-2xl font-medium"></i>
+        <button class=" px-2 py-1 text-lg font-medium bg-orange-100 border border-white rounded-lg ">Sign In</button>
+      </div>
+    </nav>
+    <header class=" flex items-center justify-between
+    px-8 py-4 ">
+      <div class="left-sec w-1/2 py-8">
+        <h1 class="text-4xl font-semibold mb-6"> Hungry? We’re Already on Our Way! <br> Fastest Food Delivery Service.
+        </h1>
+        <p class=" text-gray-500 mb-6">Experience the ultimate convenience with our fastest online food delivery
+          service. Say goodbye to long waits and hello to quick, reliable delivery. Whether you're craving pizza,
+          burgers, sushi, or a healthy salad, we ensure your favorite dishes reach you fresh and piping hot in record
+          time.</p>
+        <div class="search-and-btn flex flex-wrap items-center gap-4 mb-6">
+          <input
+            class="px-6 py-3 w-full sm:w-72 lg:w-96 rounded-lg border border-orange-600 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-600"
+            type="search" placeholder="Search food or restaurant">
+          <button
+            class="text-lg bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out">
+            Search
+          </button>
+        </div>
+
+        <div class="overview flex items-center px-6 
+        text-gray-700
+        gap-10">
+
+          <div class="review flex flex-col items-center justify-center font-medium ">
+            <img  class="h-12 w-12 object-cover rounded-full " src="https://i.pinimg.com/736x/b4/e2/42/b4e2425ec3a3bdda4a408deac56056fb.jpg" alt="">
+            <h2 >15k Reviews</h2>
+            <h3>(4.8)</h3>
+          </div>
+
+          <div class="review flex flex-col items-center justify-center font-medium text-lg">
+            <img  class="h-12 w-12 object-cover rounded-full " src="https://i.pinimg.com/736x/77/7d/9c/777d9c6e187bfc29677c7de89aa73c5a.jpg" alt="">
+            <h2 >4000+</h2>
+            <h3>Resturdent</h3>
+          </div>
+          <div class="review flex flex-col items-center justify-center font-medium text-lg">
+            <img  class="h-12 w-12 object-cover rounded-full " src="https://i.pinimg.com/736x/bf/3b/22/bf3b22653efb4bcf54d76ffec4df1fd5.jpg" alt="">
+            <h2 >9000+</h2>
+            <h3>Food items</h3>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="right-sec w-1/2 h-[85vh] bg-[url('https://i.pinimg.com/736x/e4/67/4b/e4674b5f8ab9784720ed211816927f93.jpg')] rounded-2xl bg-cover "></div>
+    </header>
+  </main>
+</body>
+
+</html>
