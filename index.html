@@ -7,6 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <title>Document</title>
   <style>
+    body{
+      box-sizing: border-box;
+    }
+    .food-variety{
+      scrollbar-width: none;
+    }
+    
     @keyframes scroll {
       from {
         transform: translateX(0%);
@@ -30,13 +37,13 @@
   <main>
     <nav class=" flex items-center justify-between px-8 py-4  text-orange-600 ">
       <div class="n-left flex items-center justify-center gap-20">
-        <div class="logo text-2xl font-semibold">logo</div>
+        <div class="logo text-2xl font-bold">Food-Vilage</div>
         <div class="links flex gap-8 text-xl  items-center">
-          <a href="#"> Home
+          <a class="hover:border-b hover:border-orange-600" href="#"> Home
             <i class="ri-home-4-line"></i></a>
-          <a href="#"> Resturdent
+          <a class="hover:border-b hover:border-orange-600" href="#"> Resturdent
             <i class="ri-restaurant-line"></i> </a>
-          <a href="#"> Food
+          <a class="hover:border-b hover:border-orange-600" href="#"> Food
             <i class="ri-restaurant-2-line"></i></a>
         </div>
       </div>
@@ -62,11 +69,11 @@
         </select>
 
 
-        <i class="ri-shopping-cart-2-line text-2xl font-medium"></i>
-        <button class=" px-2 py-1 text-lg font-medium bg-orange-100 border border-white rounded-lg ">Sign In</button>
+        <i class="ri-shopping-cart-2-line text-2xl font-medium hover:font-semibold"></i>
+        <button class=" px-2 py-1 text-lg font-medium bg-orange-100 border border-white rounded-lg hover:bg-orange-200 ">Sign In</button>
       </div>
     </nav>
-    <header class=" flex items-center justify-between
+    <header class=" flex items-center justify-between 
     px-8 py-4 ">
       <div class="left-sec w-1/2 py-8">
         <h1 class="text-4xl font-semibold mb-6"> Hungry? We’re Already on Our Way! <br> Fastest Food Delivery Service.
@@ -117,8 +124,64 @@
       </div>
     </header>
 
+    <h1 class="text-4xl text-center  font-bold mb-6 mt-10 "><-- Order Your Favorite Food Your Best Resturdent --> </h1>
 
-    <div class="offers px-6 py-4 flex items-center mb-8
+
+    <div class="food-variety flex items-center gap-6 px-6 mb-6 overflow-x-scroll scrollbar-hide ">
+  
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/24/8f/c1/248fc12c903cf6c7cd170b35f236fcd7.jpg" alt="Pizza" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Pizza</h2>
+          <p class="">Cheesy and delicious pizza.</p>
+        </div>
+      </div>
+    
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/1a/39/c0/1a39c075029962120003bacd91d4cd5f.jpg" alt="Burger" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Burger</h2>
+          <p class="">Juicy and delicious burger.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/cc/db/37/ccdb37463dec629f45561335d12fbc00.jpg" alt="Sushi" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Sushi</h2>
+          <p class="">Fresh and tasty sushi rolls.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/67/da/be/67dabec3c406c9235e3eafbfa642a102.jpg" alt="Ice Cream" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Ice Cream</h2>
+          <p class="">Cool and creamy ice cream.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/4e/8c/25/4e8c2503a197772c55674a8554847a49.jpg" alt="Ice Cream" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Dosha </h2>
+          <p class="">South Indian Dosha.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/97/f2/8c/97f28cda0ffc36084985e26653d51c37.jpg" alt="Ice Cream" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Paw Bhaji</h2>
+          <p class="">Desi Paw Bhai</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden w-64 flex-shrink-0 hover:bg-orange-600 hover:text-white transition-300">
+        <img src="https://i.pinimg.com/736x/d2/29/61/d2296169f22ddf5fa3044af3d4789a94.jpg" alt="Ice Cream" class="w-full h-50 object-cover ">
+        <div class="p-4 text-center">
+          <h2 class="text-xl font-semibold">Greavy Fries</h2>
+          <p class="">Enjoy Fries</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="offers px-6 py-4 flex items-center mb-10
     justify-between bg-zinc-900">
 
       <img class="w-[20vw] h-[50vh] object-cover rounded-2xl" src="burger.jpg" alt="">
@@ -133,81 +196,83 @@
 
 
     </div>
-    <div class="flex w-fit gap-5  text-black mb-16 h-[70vh]">
-      <!-- Fast Food Ad 1 -->
+
+ 
+
+<h1 class="text-4xl text-center font-bold text-zinc-900 mb-6"><--Your Hunger, Our Hustle! --></h1>
+    <div class="flex w-fit gap-5 scrolling-banner  text-black mb-20 h-[70vh]">
+   
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/eb/cb/c6/ebcbc6aaa9deca9d6efc1efc93b66945.jpg" alt="Burger Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center mb-2">
         <h1 class="text-2xl font-medium mb-2">Juicy Cheese Burger</h1>
         <h2 class="text-lg mb-2">Taste the Ultimate Flavor</h2>
         <h3 class="text-m mb-2"> premium cheese and fresh veggies</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 2 -->
+
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/e0/f7/ff/e0f7ff99303abe102c93104f862ca50d.jpg" alt="Pizza Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center">
         <h1 class="text-2xl font-medium mb-2">Cheesy Pepperoni Pizza</h1>
         <h2 class="text-lg mb-2">Satisfy Your Cravings</h2>
         <h3 class="text-m mb-2">Baked to perfection with crispy crust</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 3 -->
+
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/94/82/41/948241670748dc8c5c1658fd316b4bc1.jpg" alt="Fries Ad" class="rounded-lg h-full w-full object-cover mb-2  object-center">
         <h1 class="text-2xl font-medium mb-2">Crispy French Fries</h1>
         <h2 class="text-lg mb-2">Perfectly Golden and Crunchy</h2>
         <h3 class="text-m mb-2">Served with your favorite dips</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 4 -->
+  
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/e6/d1/ba/e6d1bad872c8777e77ac9f206b8d2c74.jpg" alt="Shake Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center">
         <h1 class="text-2xl font-medium mb-2">Choco Delight Shake</h1>
         <h2 class="text-lg mb-2">Indulge in Sweetness</h2>
         <h3 class="text-m mb-2">Rich, creamy, and irresistible</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 5 -->
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/2e/ac/a3/2eaca366537c4cbb3c573ab63cfd7e05.jpg" alt="Noodles Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center">
         <h1 class="text-2xl font-medium mb-2">Soy Noodles</h1>
         <h2 class="text-lg mb-2">Savor the Taste of Asia</h2>
         <h3 class="text-m mb-2">Rich flavors with a tangy twist</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 6 -->
+
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/31/bd/88/31bd88cc2c87124bc29a9009609be881.jpg" alt="Pasta Ad" class="rounded-lg h-full w-full object-cover object-center">
         <h1 class="text-2xl font-medium mb-2">White Sauce Pasta</h1>
         <h2 class="text-lg mb-2">Creamy & Delicious</h2>
         <h3 class="text-m mb-2">A blend of Italian goodness</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     
-      <!-- Fast Food Ad 7 -->
+
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/fa/9e/72/fa9e721c16838d5b0e8fbc88bed9cbb8.jpg" alt="Manchurian Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center">
         <h1 class="text-2xl font-medium mb-2">Gobhi Manchurian</h1>
         <h2 class="text-lg mb-2">A Spicy Treat</h2>
         <h3 class="text-m mb-2">Packed with bold flavors</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
-    
-      <!-- Fast Food Ad 8 -->
+
       <div class="img1 h-[50vh] w-[20vw] text-center">
         <img src="https://i.pinimg.com/736x/bf/3b/22/bf3b22653efb4bcf54d76ffec4df1fd5.jpg" alt="Paneer Ad" class="rounded-lg h-full w-full object-cover mb-2 object-center">
         <h1 class="text-2xl font-medium mb-2">Kadai Paneer</h1>
         <h2 class="text-lg mb-2">Authentic Indian Flavors</h2>
         <h3 class="text-m mb-2">A delight in every bite</h3>
-        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11]">Order Now!</button>
+        <button class="px-3 py-1 text-lg bg-white text-black rounded-lg border-2 border-[#F56C11] hover:bg-orange-600 hover:text-white transition-300">Order Now!</button>
       </div>
     </div>
 
-    <div class="where-is-my-order px-12   bg-[#F56C11] flex items-center justify-between  ">
+    <div class="where-is-my-order px-12 mb-8  bg-[#F56C11] flex items-center justify-between  ">
     <div class="track">
       <h1 class="text-5xl font-bold text-center text-white mb-4 shadow-lg rounded-2xl">Where is My Order ?</h1>
       <h2 class="text-2xl font-semibold text-center text-white mb-4">Track your Order</h2>
@@ -228,9 +293,9 @@
       
     </div>
 
-    <div class="order-process px-6 flex items-center justify-between">
+    <div class="order-process px-6 flex items-center  justify-between">
       <div class="max-w-4xl mx-auto">
-        <h1 class="text-gray-800 text-3xl font-semibold mb-6">
+        <h1 class="text-gray-800 text-4xl  font-bold mb-6">
           A Very Simple Process To Order Your Favorite Foods
         </h1>
         
@@ -268,6 +333,126 @@
       </div>
 
     </div>
+
+
+
+
+
+    <div class="payment px-72 py-4 rounded-2xl ">
+      <h2 class =" text-4xl font-bold text-zinc-800   mb-6 text-center" > <-- Food Delivery Payment --></h2>
+   
+    <form class="" >
+      <div class="mb-4">
+        <label class="block text-orange-600 text-2xl      font-medium mb-2">Full Name</label>
+        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-orange-600 rounded-lg focus:outline-none " placeholder="Enter your name" >
+      </div>
+
+      <div class="mb-4">
+        <label  class="block text-orange-600 text-2xl     font-medium mb-2">Email Address</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-orange-600 rounded-lg focus:outline-none " placeholder="Enter your email" >
+      </div>
+
+      <div class="mb-4">
+        <label for="phone" class="block text-orange-600 text-2xl     font-medium mb-2">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-orange-600 rounded-lg focus:outline-none " placeholder="Enter your phone number" >
+      </div>
+
+      <div class="mb-4">
+        <label for="address" class="block text-orange-600 text-2xl     font-medium mb-2">Delivery Address</label>
+        <textarea id="address" name="address" rows="3" class="w-full px-4 py-2 border border-orange-600 rounded-lg focus:outline-none " placeholder="Enter your address" ></textarea>
+      </div>
+
+   
+      <div class="mb-4">
+        <label class="block text-orange-600 text-2xl     font-medium mb-2">Payment Method</label>
+        <div class="flex items-center mb-2">
+          <input type="radio"  class="mr-2">
+          <label for="credit-card" class="text-gray-800 text-xl    ">Credit Card</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input type="radio" class="mr-2">
+          <label for="debit-card" class="text-gray-800 text-xl    ">Debit Card</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" class="mr-2">
+          <label for="cash" class="text-gray-800 text-xl    ">Cash on Delivery</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="w-full bg-white text-orange-600  border border-2 border-orange-600 text-2xl font-semibold py-3 px-12 rounded-lg  hover:bg-orange-600 hover:text-white transition-300 ">Place Order</button>
+      </div>
+    </form>
+  </div>
+
+<footer class=" text-white py-10 bg-[#EA580C]" >
+    <div class="container mx-auto flex gap-8 justify-between items-center">
+    
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Foodie</h2>
+        <p class="text-gray-200 text-xl font-medium">
+          Delicious food delivered to your door. <br> Fast, fresh, and always on time.
+        </p>
+      </div>
+  
+ 
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-200 text-xl font-medium hover:text-zinc-900">Home</a></li>
+          <li><a href="#" class="text-gray-200 text-xl font-medium hover:text-zinc-900">Menu</a></li>
+          <li><a href="#" class="text-gray-200 text-xl font-medium hover:text-zinc-900">About Us</a></li>
+          <li><a href="#" class="text-gray-200 text-xl font-medium hover:text-zinc-900">Contact</a></li>
+        </ul>
+      </div>
+  
+      
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Follow Us</h3>
+        <div class="flex  flex-col items-center ">
+          <a href="#" class="text-gray-200 text-3xl font-medium hover:text-zinc-900">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="#" class="text-gray-200 text-3xl font-medium hover:text-zinc-900">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+          <a href="#" class="text-gray-200 text-3xl font-medium hover:text-zinc-900">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
+      </div>
+  
+    
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Newsletter</h3>
+        <p class="text-gray-200 text-xl font-medium mb-4">
+          Subscribe to get the latest updates and offers.
+        </p>
+        <form class="flex flex-col space-y-2">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="px-4 py-2 rounded-lg bg-white border border-zinc-400 text-white focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-white text-orange-600   px-4 py-2 rounded-lg  font-medium hover:bg-zinc-900 transition-300" 
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="border-t border-gray-700 mt-10 py-4 text-center 
+    bg-zinc-900 font-semibold  text-xl text-orange-600">
+      &copy; 2025 Food-village | All rights reserved.
+    </div>
+  </footer>
+  
+
+  
 
 
   
